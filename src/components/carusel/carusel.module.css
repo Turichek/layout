@@ -1,0 +1,17 @@
+.card_container{
+    display: flex;
+    margin-top: -100px;
+}
+.card{
+    min-width: 440px;
+    height: 425px;
+    margin: 0 12px 0 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    z-index: 1;
+}
+.button_container button{
+    padding: 16px;
+}
