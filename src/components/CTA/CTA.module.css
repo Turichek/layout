@@ -1,0 +1,16 @@
+.cta_container{
+    margin-top: 280px;
+    margin-bottom: 280px;
+    border-radius: 15px;
+    background-color: #23242A;
+    display: flex;
+    justify-content: space-between;
+}
+.p115px{
+    padding: 115px;
+}
+.to_svg{
+    width: 30%;
+    left: 56.2%;
+    position: absolute;
+}

@@ -1,0 +1,17 @@
+.container{
+    margin-top: 340px;
+    margin-bottom: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text_container{
+    width: 70%;
+}
+.avatar_container{
+    width: 70%;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}

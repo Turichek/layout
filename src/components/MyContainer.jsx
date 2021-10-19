@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function MyContainer({children}) {
     return (
-        <Box sx={{mx: '194px', px: '16px'}}>
+        <Box sx={{mx: '13%', px: '16px'}}>
             {children}
         </Box>
     )

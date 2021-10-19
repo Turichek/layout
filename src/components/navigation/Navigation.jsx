@@ -1,7 +1,7 @@
 import { Button,Box,Link } from '@mui/material';
 import React from 'react';
 import Logo from './logo';
-import styles from "./menu.module.css"
+import styles from "./Navigation.module.css"
 import Text from '../typography/Text';
 
 export default function Navigation() {

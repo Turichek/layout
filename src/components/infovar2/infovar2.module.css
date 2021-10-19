@@ -1,0 +1,22 @@
+.content{
+    margin-top: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.li_container{
+    display: flex;
+    width: 49%;
+}
+.li_container img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.flex_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
