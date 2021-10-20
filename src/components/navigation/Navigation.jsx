@@ -14,12 +14,14 @@ export default function Navigation() {
                     {
                         links.map((item,index) =>
                             <li key={index}>
-                                <Link underline="hover"><Text sx={{pt:1}} size={21} text={item} variant={"body2"} col={'white'}></Text></Link>
+                                <Link underline="hover"><Text sx={{pt:1}} text={item} variant={"subtitle2"} col={'white'}></Text></Link>
                             </li>
                         )
                     }
                     <li>
-                        <Button sx={{color:'white', borderColor: 'white'}} variant="outlined">Get In Touch</Button>
+                        <Button sx={{color:'white', borderColor: 'white', ':hover':{ borderColor:"white" }}}
+                         variant="outlined"
+                        >Get In Touch</Button>
                     </li>
                 </ul>
             </Box>

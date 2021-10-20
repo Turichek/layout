@@ -1,22 +1,5 @@
-.content{
-    margin-top: 140px;
-    display: flex;
-    justify-content: space-between;
-}
-.text_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    width: 625px;
-}
-.revers{
-    flex-direction: row-reverse;
-}
-.norevers{
-    flex-direction: row;
-}
-.content img{
+.to_img{
     border-radius: 25px;
-    width: 675px;
-    height: 675px;
+    width: 100%;
+    height: 100%;
 }

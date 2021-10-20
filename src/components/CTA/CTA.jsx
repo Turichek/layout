@@ -7,11 +7,11 @@ import Line from '../images/line.png'
 export default function CTA() {
     return (
         <Box className={styles.cta_container}>
-            <img className={styles.to_svg} src={Line} />
+            <img className={styles.to_svg} src={Line} alt='' />
             <Box className={styles.p115px}>
-                <Text size={44} text={"Lorem ipsum dolor sit amet."} variant={'h4'} col={"white"} />
+                <Text text={"Lorem ipsum dolor sit amet."} variant={'h4'} col={"white"} />
                 <Box sx={{ mt: 4 }}>
-                    <Text size={24} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deleniti consequuntur cumque quos quis repellendus quisquam, fugit explicabo facilis totam?"}
+                    <Text text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deleniti consequuntur cumque quos quis repellendus quisquam, fugit explicabo facilis totam?"}
                         variant={'body2'} col={"white"} />
                 </Box>
             </Box>

@@ -1,0 +1,27 @@
+.container {
+    margin-top: 260px;
+    margin-bottom: 260px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.tabs_image{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tab{
+    width: 33%;
+    height: 3px;
+}
+.active{
+    background-color: #23242A;
+}
+.button_container {
+    top: 92%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

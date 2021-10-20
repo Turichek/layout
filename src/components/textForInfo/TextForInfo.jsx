@@ -6,9 +6,9 @@ import styles from './textForInfo.module.css';
 export default function TextForInfo({title,text}) {
     return (
         <Box className={styles.text_container}>
-            <Text size={64} text={title} variant={'h2'} />
+            <Text text={title} variant={'h2'} />
             <Box sx={{ my: 4 }}>
-                <Text size={28} text={text} variant={'body2'} />
+                <Text text={text} variant={'body1'} />
             </Box>
         </Box>
     )

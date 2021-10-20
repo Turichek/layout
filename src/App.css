@@ -1,6 +1,7 @@
 header{
-  position: sticky;
   background-color: #23242A;
   height: 940px;
 }
-
+footer{
+  position: relative;
+}

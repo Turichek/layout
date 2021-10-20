@@ -12,8 +12,10 @@
     display: inline;
     margin: 0 24px 0 24px;
 }
-.nav_links p{
+.nav_links h6{
     display: inline;
 }
-
+.btn{
+    border-color: white;
+}
     

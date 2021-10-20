@@ -31,8 +31,8 @@ export default function Infovar2() {
                             <li className={styles.li_container} key={index}>
                                 <img src={item.image} alt=""/>
                                 <Box>
-                                    <Text size={36} text={item.title} variant={'h6'} />
-                                    <Text size={24} text={item.text} variant={'body2'} />
+                                    <Text text={item.title} variant={'subtitle1'} />
+                                    <Text text={item.text} variant={'body2'} />
                                 </Box>
                             </li>
                         )

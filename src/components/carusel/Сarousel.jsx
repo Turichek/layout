@@ -20,17 +20,16 @@ export default function Сarousel() {
                 {
                     data.map((item, index) =>
                         <Paper elevation={15} key={index} className={styles.card}>
-                            <Text size={44} text={"Name"} variant={'h4'} />
-                            <Text size={24} text={item} variant={'body2'} />
-                            <Link underline="hover" variant='body1'><Text sx={{pt:1}} size={21} text={"Lorem ipsum dolor"} variant={"body2"} col={"primary"}/></Link>
+                            <Text text={"Name"} variant={'h4'} />
+                            <Text text={item} variant={'body2'} />
+                            <Link underline="hover" variant='body1'><Text sx={{ pt: 1 }} text={"Lorem ipsum dolor"} variant={"subtitle2"} col={"primary"} /></Link>
                         </Paper>
                     )
                 }
-
             </Box>
             <Box className={styles.button_container}>
-                <Button><ArrowBackIcon sx={{width:'52px',height: '52px'}}/></Button>
-                <Button><ArrowForwardIcon sx={{width:'52px',height: '52px'}}/></Button>
+                <Button><ArrowBackIcon sx={{ width: '52px', height: '52px' }} /></Button>
+                <Button><ArrowForwardIcon sx={{ width: '52px', height: '52px' }} /></Button>
             </Box>
         </>
     )
