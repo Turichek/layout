@@ -2,6 +2,18 @@ header{
   background-color: #23242A;
   height: 940px;
 }
+@media (max-width: 1535.95px){
+  header{height: 820px;}
+}
+@media (max-width: 1199.95px){
+  header{height: 700px;}
+}
+@media (max-width: 899.95px){
+  header{height: 580px;}
+}
+@media (max-width: 599.95px){
+  header{height: 460px;}
+}
 footer{
   position: relative;
 }

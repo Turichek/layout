@@ -1,10 +1,10 @@
-import { Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
 import TextForInfo from '../textForInfo/TextForInfo';
 import Text from '../typography/Text';
-import styles from './infovar2.module.css';
 import warning from '../images/warning.png';
 import clock from '../images/clock.png';
+import { Img, MarginGrid280, MyBox } from '../myStyledComponents';
 
 export default function Infovar2() {
     const data = [
@@ -18,27 +18,31 @@ export default function Infovar2() {
             title: "Lorem ipsum amet consectetur",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, tenetur modi voluptatibus vel obcaecati dolorem delectus?"
         },
-        
+
     ]
     return (
-        <Box className={styles.content}>
-            <TextForInfo title={"Lorem ipsum dolor sit amet consectetur."}
-                text={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur cumque pariatur rem temporibus iste totam aperiam debitis modi, inventore blanditiis, voluptatibus laboriosam accusamus maxime?"} />
-            <Box>
-                <ul className={styles.flex_ul}>
-                    {
-                        data.map((item,index)=>
-                            <li className={styles.li_container} key={index}>
-                                <img src={item.image} alt=""/>
-                                <Box>
-                                    <Text text={item.title} variant={'subtitle1'} />
+        <MarginGrid280 container columns={{ xl: 12, lg: 12, md: 12, sm: 12, xs: 12 }} justifyContent={'space-between'} direction={'column'}>
+            <Grid item container xl={12}>
+                <TextForInfo title={"Lorem ipsum dolor sit amet consectetur."}
+                    text={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur cumque pariatur rem temporibus iste totam aperiam debitis modi, inventore blanditiis, voluptatibus laboriosam accusamus maxime?"} />
+            </Grid>
+            <Grid item container xl={12}>
+                {
+                    data.map((item, index) =>
+                        <Grid item container spacing={1} xl={6} lg={6} md={6} columns={{ md: 12 }} key={index}>  {/*eslint-disable-line  */}
+                            <Grid item xs={1} md={2}>
+                                <Img src={item.image} alt="" />
+                            </Grid>
+                            <Grid item xs={11} md={10}>
+                                <Text text={item.title} variant={'subtitle1'} />
+                                <MyBox>
                                     <Text text={item.text} variant={'body2'} />
-                                </Box>
-                            </li>
-                        )
-                    }
-                </ul>
-            </Box>
-        </Box>
+                                </MyBox>
+                            </Grid>
+                        </Grid>
+                    )
+                }
+            </Grid>
+        </MarginGrid280>
     )
 }

@@ -1,18 +1,18 @@
-import { Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
+import { Img, MarginGrid280, MyBox } from '../myStyledComponents';
 import TextForInfo from '../textForInfo/TextForInfo';
-import styles from './infovar3.module.css';
 
 export default function Infovar3({image}) {
     return (
-        <Box className={styles.container}>
-            <Box className={styles.text_container}> 
+        <MarginGrid280 container direction={'column'} justifyContent={'space-between'}>
+            <Grid item container justifyContent={'center'}> 
                 <TextForInfo title={"Lorem ipsum dolor sit amet consectetur."}
                     text={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur cumque pariatur rem temporibus iste totam aperiam debitis modi, inventore blanditiis, voluptatibus laboriosam accusamus maxime?"} />
-            </Box>
-            <Box className={styles.img_container}>
-                <img className={styles.to_img} src={image} alt=""/>
-            </Box>
-        </Box>
+            </Grid>
+            <Grid item>
+                <MyBox><Img src={image} alt=""/></MyBox>
+            </Grid>
+        </MarginGrid280>
     )
 }

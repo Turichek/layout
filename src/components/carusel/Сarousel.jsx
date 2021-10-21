@@ -1,9 +1,9 @@
-import { Box, Paper, Link, Button } from "@mui/material";
+import { Box, Link, Button} from "@mui/material";
 import React from "react";
 import Text from "../typography/Text";
-import styles from "./carusel.module.css"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { CardPaper, CarouselGrid } from "../myStyledComponents";
 
 export default function Сarousel() {
     const data = [
@@ -16,20 +16,20 @@ export default function Сarousel() {
     ]
     return (
         <>
-            <Box className={styles.card_container}>
+            <CarouselGrid container wrap={'nowrap'}>
                 {
                     data.map((item, index) =>
-                        <Paper elevation={15} key={index} className={styles.card}>
+                        <CardPaper elevation={5} key={index}>
                             <Text text={"Name"} variant={'h4'} />
                             <Text text={item} variant={'body2'} />
                             <Link underline="hover" variant='body1'><Text sx={{ pt: 1 }} text={"Lorem ipsum dolor"} variant={"subtitle2"} col={"primary"} /></Link>
-                        </Paper>
+                        </CardPaper>
                     )
                 }
-            </Box>
-            <Box className={styles.button_container}>
-                <Button><ArrowBackIcon sx={{ width: '52px', height: '52px' }} /></Button>
-                <Button><ArrowForwardIcon sx={{ width: '52px', height: '52px' }} /></Button>
+            </CarouselGrid>
+            <Box>
+                <Button sx={{ mx: 0.2, minWidth: '52px', height: '52px', p: 0 }}><ArrowBackIcon  /></Button>
+                <Button sx={{ mx: 0.2, minWidth: '52px', height: '52px', p: 0 }}><ArrowForwardIcon  /></Button>
             </Box>
         </>
     )

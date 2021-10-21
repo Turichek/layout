@@ -6,13 +6,11 @@
     min-width: 350px;
     max-width: 350px;
     height: 330px;
-    margin: 0 12px 0 12px;
+    margin: 0 12px;
     padding: 48px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     z-index: 1;
-}
-.button_container button{
-    padding: 16px;
 }

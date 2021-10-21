@@ -1,4 +1,4 @@
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 import Text from '../typography/Text';
 import styles from './MyFooter.module.css';

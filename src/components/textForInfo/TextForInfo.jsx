@@ -1,15 +1,15 @@
-import { Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
+import { MyBox } from '../myStyledComponents';
 import Text from '../typography/Text';
-import styles from './textForInfo.module.css';
 
 export default function TextForInfo({title,text}) {
     return (
-        <Box className={styles.text_container}>
+        <Grid item xl={8} lg={8} md={8} sm={10} xs={12}>
             <Text text={title} variant={'h2'} />
-            <Box sx={{ my: 4 }}>
+            <MyBox sx={{ my: 4 }}>
                 <Text text={text} variant={'body1'} />
-            </Box>
-        </Box>
+            </MyBox>
+        </Grid>
     )
 }

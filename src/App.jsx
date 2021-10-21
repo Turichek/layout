@@ -12,7 +12,6 @@ import Review from './components/Review/Review';
 import CTA from './components/CTA/CTA';
 import Card from './components/card/Card';
 import Slider from './components/slider/Slider';
-import MyContainer from './components/MyContainer';
 
 import Nature from './components/images/nature.png';
 import Nature2 from './components/images/nature2.png';
@@ -34,6 +33,7 @@ import Avatar from './components/images/avatar1.png';
 import Team from './components/team/Team';
 import Hero from './components/hero/Hero';
 import MyFooter from './components/MyFooter/MyFooter';
+import { MyStyledContainer } from './components/myStyledComponents';
 
 function App() {
   const images = [Boy2,Boy3,Girl4,Girl5];
@@ -41,12 +41,12 @@ function App() {
     <>
       <header>
         <Navigation />
-        <MyContainer>
+        <MyStyledContainer>
           <Title />
-        </MyContainer>
+        </MyStyledContainer>
       </header>
       <main>
-        <MyContainer>
+        <MyStyledContainer>
           <Сarousel />
           <Infovar1 image={Nature} revers={'revers'} />
           <Infovar1 image={Boy1} />
@@ -58,11 +58,11 @@ function App() {
           <Infovar5 image1={Water} image2={Clock} />
           <Infovar6 image1={Nature2} image2={Girl3} />
           <Review avatar={Avatar} />  
-        </MyContainer>
+        </MyStyledContainer>
         <Slider image={Clock2} />
-        <MyContainer>
+        <MyStyledContainer>
           <Team images={images} />
-        </MyContainer>
+        </MyStyledContainer>
         <Hero image={Different2} />
       </main>
       <footer>

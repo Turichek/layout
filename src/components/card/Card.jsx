@@ -1,5 +1,6 @@
-import { Box, Paper, Link } from "@mui/material";
+import { Box, Link, Grid } from "@mui/material";
 import React from "react";
+import { CardPaper, MarginGrid280 } from "../myStyledComponents";
 import Text from "../typography/Text";
 import styles from "./card.module.css"
 
@@ -19,19 +20,19 @@ export default function Card() {
         }
     ]
     return (
-        <Box className={styles.container}>
-            <Box className={styles.text_container}>
-                <Box sx={{ width: '70%' }}>
+        <MarginGrid280 container direction={'column'} justifyContent={'space-between'}>
+            <Grid item container justifyContent={'space-between'}>
+                <Grid item >
                     <Text text={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, magni?"} variant={'h3'} />
-                </Box>
-                <Box>
+                </Grid>
+                <Grid item>
                     <Link underline="hover"><Text sx={{ pt: 1 }} text={"Lorem ipsum dolor ᐳ"} variant={"subtitle2"} col={"primary"} /></Link>
-                </Box>
-            </Box>
-            <Box className={styles.card_container}>
+                </Grid>
+            </Grid>
+            <Grid className={styles.card_container}>
                 {
                     data.map((item, index) =>
-                        <Paper elevation={15} key={index} className={styles.card}>
+                        <CardPaper elevation={5} key={index}>
                             <Box>
                                 <Text text={item.title} variant={'h4'} />
                                 <Box sx={{ my: 4 }}>
@@ -42,10 +43,10 @@ export default function Card() {
                                 <hr className={styles.my_36} />
                                 <Link underline="hover" variant='body1'><Text sx={{ pt: 1 }} text={"Lorem ipsum dolor"} variant={"subtitle2"} col={"primary"} /></Link>
                             </Box>
-                        </Paper>
+                        </CardPaper>
                     )
                 }
-            </Box>
-        </Box>
+            </Grid>
+        </MarginGrid280>
     )
 }
