@@ -12,7 +12,7 @@ export default function Infovar1({ image, revers }) {
                 </Grid>
             </Grid>
             <Grid item xl lg md sm xs><span style={{visibility: 'hidden'}}><Text text={'123'} variant={'caption'}/></span></Grid>
-            <Grid container xl={5} justifyContent={'center'} alignItems={'center'} >
+            <Grid item container xl={5} justifyContent={'center'} alignItems={'center'} >
                 <Grid item xl={12} lg={8} md={9} sm={10} xs={10}>
                     <Text text={"Adipisicing elit. Et, similique doloremque"} variant={'h3'} />
                     <MyBox >

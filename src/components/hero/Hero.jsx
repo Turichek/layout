@@ -1,18 +1,20 @@
-import { Box, Button } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
+import { ResponsivButton,Img2 } from '../myStyledComponents';
 import Text from '../typography/Text';
-import styles from './Hero.module.css';
 
 export default function Hero({ image }) {
     return (
-        <Box className={styles.content}>
-            <Box>
-                <img src={image} alt="..." />
-            </Box>
-            <Box className={styles.text_container}>
-                <Text text={"Lorem ipsum dolor sit amet elit, sed do eiusmod"} variant={'h1'} />
-                <Button sx={{width:"250px", mt:5}} variant='contained' size='large'>Get In Touch</Button>
-            </Box>
-        </Box>
+        <Grid container justifyContent={'space-between'}>
+            <Grid item xl={7} lg={7} md={7} sm={7} xs={12}>
+                <Img2 src={image} alt="..." />
+            </Grid>
+            <Grid sx={{my:2}} item container xl={5} lg={5} md={5} sm={5} xs={12} alignItems={'center'} justifyContent={'center'}>
+                <Grid item xl={10} lg={10} md={10} sm={11} xs={11} >
+                    <Text text={"Lorem ipsum dolor sit amet elit, sed do eiusmod"} variant={'h1'} />
+                    <ResponsivButton sx={{my:2}} variant='contained' size='large'>Get In Touch</ResponsivButton>
+                </Grid>
+            </Grid>
+        </Grid>
     )
 }

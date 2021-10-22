@@ -8,7 +8,7 @@ export default function CTA() {
     return (
         <MarginGrid280 container sx={{ borderRadius: 5, backgroundColor: '#23242A' }}>
             <img style={{width:'30%',left: '65.2%',position: 'absolute'}} src={Line} alt='' />
-            <CTAGrid sx={{mx:1}} item container justifyContent={'space-around'}>
+            <CTAGrid item container justifyContent={'space-around'}>
                 <Grid item xl={8} lg={8} md={8} sm={8} xs={8}>
                     <Text text={"Lorem ipsum dolor sit amet."} variant={'h4'} col={"white"} />
                     <MyBox>

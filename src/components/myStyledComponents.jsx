@@ -73,26 +73,95 @@ export const CardPaper = styled(Paper)(`
     }
 `)
 
+export const CardPaper2 = styled(Paper)(`
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 100%;
+    margin: 12px 12px;
+    padding: 36px 36px 18px 36px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    @media (max-width: 1535.95px){
+        min-width: 290px;
+        max-width: 290px;
+        height: 280px;
+        margin:10px 10px;
+        padding: 32px 32px 16px 32px;
+    }
+    @media (max-width: 1199.95px){
+        min-width: 240px;
+        max-width: 240px;
+        height: 230px;
+        margin: 8px 8px;
+        padding: 28px 28px 14px 28px;
+    }
+    @media (max-width: 899.95px){
+        min-width: 190px;
+        max-width: 190px;
+        height: 180px;
+        margin: 4px 4px;
+        padding: 24px 24px 12px 24px;
+    }
+    @media (max-width: 599.95px){
+        min-width: 130px;
+        max-width: 130px;
+        height: 130px;
+        margin: 2px 2px;
+        padding: 20px 20px 10px 20px;
+    }
+`)
+
 export const ResponsivButton = styled(Button)(`
     max-width: 250px;
+    min-width: 250px;
     font-size: 15px;
 
     @media (max-width: 1535.95px){
         max-width: 210px;
+        min-width: 185px;
         font-size: 12px;
     }
     @media (max-width: 1199.95px){
         max-width: 170px;
+        min-width: 145px;
         font-size: 10px;
     }
     @media (max-width: 899.95px){
         max-width: 130px;
+        min-width: 105px;
         font-size: 8px;
     }
     @media (max-width: 599.95px){
         max-width: 90px;
-        font-size: 6px;
         min-width: 85px;
+        font-size: 6px;
+    }
+`)
+
+export const ResponsivButton2 = styled(Button)(`
+    max-width: 450px;
+    min-width: 450px;
+    min-height: 100%;
+    color: white;
+
+    @media (max-width: 1535.95px){
+        max-width: 380px;
+        min-width: 380px;
+    }
+    @media (max-width: 1199.95px){
+        max-width: 210px;
+        min-width: 210px;
+    }
+    @media (max-width: 899.95px){
+        max-width: 140px;
+        min-width: 140px;
+    }
+    @media (max-width: 599.95px){
+        max-width: 70px;
+        min-width: 70px;
     }
 `)
 
@@ -181,6 +250,11 @@ export const Img = styled('img')(`
     @media (max-width: 599.95px){
         border-radius: 5px;
     }
+`)
+
+export const Img2 = styled('img')(`
+    max-width: 100%;
+    max-height: 100%;
 `)
 
 export const MyStyledContainer = styled(Box)(`
